@@ -173,7 +173,8 @@ export default merge.smart(baseConfig, {
     minimizer: [
       new UglifyJSPlugin({
         parallel: true,
-        sourceMap: true
+        sourceMap: true,
+        include: []
       }),
       new OptimizeCSSAssetsPlugin({
         cssProcessorOptions: {
